@@ -3,6 +3,15 @@ import React from 'react';
 
 const Register = () => {
 
+    const { data: hospitals } = useQuery({
+        queryKey: ['hospitals'],
+        queryFn: async () => {
+            const res = await fetch('http://localhost:5000/hospitals')
+            const data = await res.json()
+            return data;
+        }
+    })
+
     const handleSignUp = event => {
         event.preventDefault();
         const form = event.target;
@@ -33,18 +42,10 @@ const Register = () => {
         })
     }
 
-    const { data: hospitals } = useQuery({
-        queryKey: ['hospitals'],
-        queryFn: async () => {
-            const res = await fetch('http://localhost:5000/hospitals')
-            const data = await res.json()
-            return data;
-        }
-    })
-
     return (
         <div>
             <p>Psychiatrist register</p>
+
             <form onSubmit={handleSignUp} className='w-1/2 p-12 pt-20 mx-auto'>
                 <div className="form-control w-full ">
                     <label className="label">
@@ -58,7 +59,7 @@ const Register = () => {
                     </label>
                     <select name='hospital' className="select w-full">  
                     {
-                        hospitals.map(hospital=><option value={hospital._id}>{hospital.name}</option>) 
+                        hospitals?.map(hospital=><option value={hospital._id}>{hospital.name}</option>) 
                     }   
                     </select>
                 </div>
