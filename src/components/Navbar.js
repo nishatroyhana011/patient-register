@@ -14,13 +14,13 @@ const Navbar = () => {
                         <Link className='mx-4 text-green-600 text-lg font-semibold' to='/login'>Psychiatrist  Login</Link>
                         <Link className='mx-4 text-green-600 text-lg font-semibold' to='/register'>Psychiatrist Registration</Link>
                         <Link className='mx-4 text-green-600 text-lg font-semibold' to='/pregister'>Patient Register</Link>
-                        {/* {
+                        {
                             psychiatrist?.email? <>
                             <Link className='mx-6 text-green-600 text-lg font-semibold' to='/pregister'>Patient Register</Link>
                             </> : <>
                             <p></p>
                             </>
-                        } */}
+                        }
                         
                 </div>
                 
