@@ -36,7 +36,7 @@ const Register = () => {
         .then(res=>res.json())
         .then(data=>{
             if (data.acknowledged) {
-                alert('added!')
+                alert('Please Login Now!')
             } 
             form.reset();
         })

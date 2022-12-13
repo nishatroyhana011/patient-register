@@ -30,7 +30,7 @@ const router = createBrowserRouter([
                 element:<Register></Register>
             },
             {
-                path:'/preg',
+                path:'/pregister',
                 element:<PatientReg></PatientReg>
             }
         ]    
