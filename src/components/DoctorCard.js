@@ -8,7 +8,6 @@ const DoctorCard = ({doctor}) => {
         fetch(`http://localhost:5000/patient?psychiatristId=${_id}`)
             .then(res => res.json())
             .then(data => {
-                 console.log(data)
                setPcount(data)
             })
             .catch(err=>{
@@ -20,7 +19,7 @@ const DoctorCard = ({doctor}) => {
         <div className='p-3 shadow-md'>
             <p>Id: {_id}</p>
             <p>Name: {psychiatristName}</p>
-            <p>{pcount}</p>
+            <p>Number of Patient: {pcount}</p>
         </div>
     );
 };
