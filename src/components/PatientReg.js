@@ -62,7 +62,7 @@ const PatientReg = () => {
             hospital,
             psychiatristId: _id
         }
-        fetch('http://localhost:5000/patient', {
+        fetch('https://patient-register-server-nishatroyhana011.vercel.app/patient', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'  

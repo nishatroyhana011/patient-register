@@ -7,7 +7,7 @@ const Login = () => {
     const navigate = useNavigate()
 
     const verifyDoctor = (email, password) => {
-        fetch(`http://localhost:5000/Psychiatrist?email=${email}`)
+        fetch(`https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

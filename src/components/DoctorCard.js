@@ -5,7 +5,7 @@ const DoctorCard = ({doctor}) => {
     const {_id, psychiatristName} = doctor;
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/patient?psychiatristId=${_id}`)
+        fetch(`https://patient-register-server-nishatroyhana011.vercel.app/patient?psychiatristId=${_id}`)
             .then(res => res.json())
             .then(data => {
                setPcount(data)

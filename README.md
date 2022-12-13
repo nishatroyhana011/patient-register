@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# vercel link:
+https://patient-register-server-nishatroyhana011.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  libraries/frameworks:
+* reactjs
+* react-dom
+* react-router-dom
+* nodejs
+* expressjs
+* mongodb
+* tanstack react-query
+* taliwind css
+* daisyUI
+* imgBB
 
-## Available Scripts
+# API lists:
 
-In the project directory, you can run:
+* POST https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist
 
-### `npm start`
+* GET https://patient-register-server-nishatroyhana011.vercel.app/hospitals
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* GET https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist?email=nishat@gmail.com
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Query Params
+email
+nishat@gmail.com
 
-### `npm test`
+* POST https://patient-register-server-nishatroyhana011.vercel.app/patient
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Bodyform-data
+patientName gg
+adderss
+abcd efghijk
+email
+gg@gmail.com
+phone
+01234556690
+password
+Qwertyui12
+photo
+https://i.ibb.co/ZVWjy4Q/318909148-1661490190933120-2379332137681792621-n.png
+hospital
+639581bcd2f4496b9dbbf93a
+psychiatristId
+6398aa256f14cbd701886b69
 
-### `npm run build`
+* GET https://patient-register-server-nishatroyhana011.vercel.app/hospital/639581bcd2f4496b9dbbf93a
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* GET https://patient-register-server-nishatroyhana011.vercel.app/patient?psychiatristId=6396cf6e178cd2b82d0f8bdb

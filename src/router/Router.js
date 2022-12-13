@@ -13,11 +13,11 @@ const router = createBrowserRouter([
         children: [
             {
                path:'/',
-               loader:() => fetch('http://localhost:5000/hospitals'),
+               loader:() => fetch('https://patient-register-server-nishatroyhana011.vercel.app/hospitals'),
                element: <Home></Home>
             },
             {
-                loader:({params}) => fetch(`http://localhost:5000/hospital/${params.id}`),
+                loader:({params}) => fetch(`https://patient-register-server-nishatroyhana011.vercel.app/hospital/${params.id}`),
                 path: '/hospital/:id',
                 element:<Hospital></Hospital>
             },

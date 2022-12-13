@@ -6,7 +6,7 @@ const Register = () => {
     const { data: hospitals } = useQuery({
         queryKey: ['hospitals'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/hospitals')
+            const res = await fetch('https://patient-register-server-nishatroyhana011.vercel.app/hospitals')
             const data = await res.json()
             return data;
         }
@@ -26,7 +26,7 @@ const Register = () => {
             email,
             password
         }
-        fetch('http://localhost:5000/Psychiatrist', {
+        fetch('https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'  
