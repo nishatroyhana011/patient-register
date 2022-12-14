@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "639581bcd2f4496b9dbbf93a",
+        "hId": "h01",
+        "name": "Apollo Hospitals"
+    },
+    {
+        "_id": "639581bcd2f4496b9dbbf93b",
+        "hId": "h02",
+        "name": "Jawaharlal Nehru Medical College and Hospital"
+    },
+    {
+        "_id": "639581bcd2f4496b9dbbf93c",
+        "hId": "h03",
+        "name": "Indira Gandhi Institute of Medical Sciences (IGIMS)"
+    },
+    {
+        "_id": "639581bcd2f4496b9dbbf93d",
+        "hId": "h04",
+        "name": "AIIMS - All India Institute Of Medical Science"
+    }
+]

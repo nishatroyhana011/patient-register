@@ -19,6 +19,7 @@ https://patient-register-server-nishatroyhana011.vercel.app/
 # API lists:
 
 * POST https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist
+
 Bodyform-data:
 psychiatristName,
 hospital,
@@ -44,9 +45,11 @@ hospital,
 psychiatristId
 
 * GET https://patient-register-server-nishatroyhana011.vercel.app/hospital/:id
+
 _id=639581bcd2f4496b9dbbf93a
 
 * GET https://patient-register-server-nishatroyhana011.vercel.app/patient?psychiatristId=id
+
 Query Params
 psychiatristId=6396cf6e178cd2b82d0f8bdb
 
@@ -61,3 +64,5 @@ psychiatristId=6396cf6e178cd2b82d0f8bdb
 * Firebase authentication for register, login and logout
 * Psychiatrist can input appoinment date and time for meeting
 * seperate dashboard for psychiatrists  and patients
+
+# entries are saved in database folder
