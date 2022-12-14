@@ -46,7 +46,7 @@ const Register = () => {
         <div>
             <p>Psychiatrist register</p>
 
-            <form onSubmit={handleSignUp} className='w-1/2 p-12 pt-20 mx-auto'>
+            <form onSubmit={handleSignUp} className='w-10/12 md:w-9/12 lg:w-1/2 p-12 pt-20 mx-auto'>
                 <div className="form-control w-full ">
                     <label className="label">
                         <span className="label-text">Psychiatrist Name</span>

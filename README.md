@@ -1,5 +1,8 @@
 # vercel link:
 https://patient-register-server-nishatroyhana011.vercel.app/
+# live link:
+ https://patient-register-3498c.web.app
+
 
 #  libraries/frameworks:
 * reactjs
@@ -16,34 +19,45 @@ https://patient-register-server-nishatroyhana011.vercel.app/
 # API lists:
 
 * POST https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist
+Bodyform-data:
+psychiatristName,
+hospital,
+email,
+password
 
 * GET https://patient-register-server-nishatroyhana011.vercel.app/hospitals
 
-* GET https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist?email=nishat@gmail.com
+* GET https://patient-register-server-nishatroyhana011.vercel.app/Psychiatrist?email=
 
 Query Params
-email
+email=
 nishat@gmail.com
 
 * POST https://patient-register-server-nishatroyhana011.vercel.app/patient
 
-Bodyform-data
-patientName gg
-adderss
-abcd efghijk
-email
-gg@gmail.com
-phone
-01234556690
-password
-Qwertyui12
-photo
-https://i.ibb.co/ZVWjy4Q/318909148-1661490190933120-2379332137681792621-n.png
-hospital
-639581bcd2f4496b9dbbf93a
+Bodyform-data:
+patientName, adderss, email,
+phone, 
+password, 
+photo,
+hospital,
 psychiatristId
-6398aa256f14cbd701886b69
 
-* GET https://patient-register-server-nishatroyhana011.vercel.app/hospital/639581bcd2f4496b9dbbf93a
+* GET https://patient-register-server-nishatroyhana011.vercel.app/hospital/:id
+_id=639581bcd2f4496b9dbbf93a
 
-* GET https://patient-register-server-nishatroyhana011.vercel.app/patient?psychiatristId=6396cf6e178cd2b82d0f8bdb
+* GET https://patient-register-server-nishatroyhana011.vercel.app/patient?psychiatristId=id
+Query Params
+psychiatristId=6396cf6e178cd2b82d0f8bdb
+
+# Usage
+* Please register a psychiatrist than log in to add a patient. I checked email and password of an existing psychiatrist and set sychiatrist  credential to state in login page
+* After login, register patient option will be available in navbar. I passed hospitalID and PsychiatristId while adding a patient
+* I didn't add any logout button, If you refresh the page current Psychiatrist will be removed from setPsychiatrist state.
+* Psychiatrist/patient with same email can be added. I didn't check because of easy registration.
+
+
+# Future possibilities
+* Firebase authentication for register, login and logout
+* Psychiatrist can input appoinment date and time for meeting
+* seperate dashboard for psychiatrists  and patients

@@ -86,7 +86,7 @@ const PatientReg = () => {
         <div>
         <p>Patient Register</p>
 
-        <form onSubmit={handlePatientRegister} className='w-1/2 p-12 pt-20 mx-auto'>
+        <form onSubmit={handlePatientRegister} className='w-10/12 md:w-9/12 lg:w-1/2 p-12 pt-20 mx-auto'>
        
             <div className="form-control w-full ">
                 <label className="label">
@@ -129,7 +129,7 @@ const PatientReg = () => {
             </div>
 
             <div>
-                <button className='btn my-3' type='submit'> Register </button>
+                <button className='btn my-3' type='submit'> Register Patient </button>
             </div>
         </form>
     </div>
