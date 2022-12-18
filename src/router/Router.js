@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../components/Home";
 import Hospital from "../components/Hospital";
+import HospitalList from "../components/HospitalList";
 import Login from "../components/Login";
 import PatientReg from "../components/PatientReg";
 import Register from "../components/Register";
@@ -13,8 +14,12 @@ const router = createBrowserRouter([
         children: [
             {
                path:'/',
-               loader:() => fetch('https://patient-register-server-nishatroyhana011.vercel.app/hospitals'),
                element: <Home></Home>
+            },
+            {
+                path:'/list',
+                loader:() => fetch('https://patient-register-server-nishatroyhana011.vercel.app/hospitals'),
+                element: <HospitalList></HospitalList>
             },
             {
                 loader:({params}) => fetch(`https://patient-register-server-nishatroyhana011.vercel.app/hospital/${params.id}`),

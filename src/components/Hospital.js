@@ -7,8 +7,8 @@ const Hospital = () => {
     const {hospitalName, doctorsArray, patientArray}= hospitalDetail;
     return (
         <div>
-            <p className='text-green-600 font-semibold text-xl my-10'>{hospitalName?.name}</p>
-            <div className='grid grid-cols-1 md:grid-cols-2 w-8/12 mx-auto'>
+            <p className='text-green-600 font-semibold text-xl my-8'>{hospitalName?.name}</p>
+            <div className='grid grid-cols-1 md:grid-cols-2 w-8/12 mx-auto my-6'>
                 <div className='text-start mx-5'>
                     <p className='text-green-600 my-4'>At a glance:</p>
                     <p>Total Psychiatrists: {doctorsArray?.length}</p>
